@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Treasure Hunt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: #222;
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
         }
 
         .container {
@@ -19,6 +19,7 @@
 
         #Left, #Right {
             width: 50%;
+            height: 100%;
         }
 
         iframe {
@@ -34,7 +35,7 @@
             display: block;
         }
 
-        /* Responsive layout for smaller screens */
+        /* Mobile layout: stack vertically */
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -47,7 +48,7 @@
             }
 
             iframe {
-                height: 300px; /* Adjust height as needed for mobile */
+                height: 50vh; /* Half the viewport height */
             }
 
             #Right img {
